@@ -5,6 +5,8 @@ const PostSchema = new mongoose.Schema({
   description: { type: String, default: "" },
   link: { type: String, required: true },
   image: { type: String, default: null },
+  status: {type: String, default: "pending"},
+  analysis: {type: String, default: ""}, 
   createdAt: { type: Date, default: Date.now },
 });
 
